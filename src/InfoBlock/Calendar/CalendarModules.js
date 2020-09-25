@@ -3,7 +3,6 @@ const DAYS_IN_WEEK = 7;
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 
-
 export function areEqual(a, b) {
     if (!a || !b) return false;
 

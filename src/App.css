@@ -13,15 +13,21 @@ a:before {
     height: 5px;
     bottom: -5px;
     left: 0;
-    background: orangered;
+    background-color: #ff4500;
     visibility: hidden;
-    border-radius: 5px;
+    border-radius: 100%;
     transform: scaleX(0);
     transition: .1s linear;
 }
 a:hover:before {
     visibility: visible;
     transform: scaleX(0.1);
+}
+
+.Date {
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
 }
 
 .scroll_html, .scroll_body
@@ -124,7 +130,7 @@ hr {
     color: gold;
     padding: 5px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 1300;
     font-family: sans-serif;
 }
 .text2 {

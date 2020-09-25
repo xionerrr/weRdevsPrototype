@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
-    margin-top: 50px;
 }
 
 .calendar header button,
@@ -16,14 +15,15 @@
     border-collapse: separate;
     border-spacing: 0;
     margin: auto;
-    color: white;
+    color: black;
 }
 
 .calendar th {
     vertical-align: middle;
     text-align: center;
     height: 100px;
-    color: white
+    color: white;
+    padding-top: 10px;
 
 }
 
@@ -34,6 +34,7 @@
     border: 2px solid transparent;
     letter-spacing: 5px;
     line-height: 35px;
+    color: white;
 }
 
 .calendar .day:hover {
@@ -42,11 +43,11 @@
 }
 
 .calendar .day.selected {
-    border: 2px solid dodgerblue;
+    border: 2px solid gold;
 }
 
 .calendar .day.today {
-    background-color: dodgerblue;
+    background-color: orange;
     color: white;
 }
 

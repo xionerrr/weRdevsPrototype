@@ -76,7 +76,7 @@ export default class Calendar extends React.Component {
                         )}
                     </tr>
                     </thead>
-                    <hr />
+
 
                     <tbody>
                     {monthData.map((week, index) =>
@@ -96,7 +96,11 @@ export default class Calendar extends React.Component {
                         </tr>
                     )}
                     </tbody>
+
+
                 </table>
+
+                <h2 className='Date'> SEPTEMBER </h2>
             </div>
         );
     }
