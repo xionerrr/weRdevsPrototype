@@ -5,14 +5,17 @@ import { Route } from "react-router-dom";
 import InfoBlock from "./InfoBlock/InfoBlock";
 import About from "./InfoBlock/About/about";
 
+
 function App() {
   return (
     <div className='wrapper'>
         <Header />
 
         <div className='app-wrapper'>
-            <Route path= '/home' render = {() => <InfoBlock /> } />
+
+            <Route exact path= '/' render = {() => <InfoBlock/> }/>
             <Route path= '/about' render = {() => <About/> } />
+
         </div>
 
 

@@ -15,13 +15,15 @@ a:before {
     left: 0;
     background-color: #ff4500;
     visibility: hidden;
-    border-radius: 100%;
-    transform: scaleX(0);
-    transition: .1s linear;
+    opacity: 0;
+    border-radius: 2%;
+    transform: scaleX(0.8);
+    transition: .2s ease-in-out;
 }
 a:hover:before {
+    opacity: 1;
     visibility: visible;
-    transform: scaleX(0.1);
+    transform: scaleX(1);
 }
 
 .Date {
@@ -70,6 +72,7 @@ img {
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
+
 }
 .Header{
     grid-column: 1/4;
@@ -89,20 +92,17 @@ img {
     width: fit-content;
     cursor: pointer;
     bottom: 0.75em;
-}
-
-hr {
-    position: absolute;
-    width: 100%;
+    font-family: "Helvetica Neue";
 }
 
 .p2-2 {
     position: relative;
     left: 20em;
-    bottom: 2em;
+    bottom: 2.01em;
     color: black;
     width: fit-content;
     cursor: pointer;
+    font-family: "Helvetica Neue";
 }
 
 
@@ -111,7 +111,9 @@ hr {
     position: relative;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
-    width: 1090px;
+    max-width: 1190px;
+    min-width: 900px;
+    width: 100%;
     height: 35em;
     color: white;
     grid-column: 1/2;
